@@ -4,7 +4,6 @@ on:
   push:
     branches: [ main ]
 
-# Permisos necesarios para GitHub Pages
 permissions:
   contents: write
   pages: write
@@ -28,7 +27,7 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./
-        server-dir: /public_html/
+        server-dir: /home/u978631206/domains/rodlex.cl/public_html/
         exclude: |
           **/.git*
           **/.git*/**
@@ -47,4 +46,4 @@ jobs:
         user_name: 'github-actions[bot]'
         user_email: 'github-actions[bot]@users.noreply.github.com'
         commit_message: '🚀 Deploy automático - ${{ github.sha }}'
-        exclude_assets: '**.md,**.pdf,**.py'
+        exclude_assets: '**.md,**.pdf'

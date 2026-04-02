@@ -10,8 +10,8 @@ permissions:
   id-token: write
 
 jobs:
-  deploy:
-    name: 🚀 Deploy a Hostinger + GitHub Pages
+  deploy-pages:
+    name: 🌐 Deploy a GitHub Pages
     runs-on: ubuntu-latest
     steps:
 
@@ -19,22 +19,6 @@ jobs:
       uses: actions/checkout@v4
       with:
         fetch-depth: 0
-
-    - name: 📤 Deploy FTP a Hostinger
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-      with:
-        server: ${{ secrets.FTP_SERVER }}
-        username: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./
-        server-dir: /home/u978631206/domains/rodlex.cl/public_html/
-        exclude: |
-          **/.git*
-          **/.git*/**
-          **/node_modules/**
-          **/.github/**
-          **/*.md
-          **/*.pdf
 
     - name: 🌐 Deploy a GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
@@ -45,5 +29,5 @@ jobs:
         cname: rodlex.cl
         user_name: 'github-actions[bot]'
         user_email: 'github-actions[bot]@users.noreply.github.com'
-        commit_message: '🚀 Deploy automático - ${{ github.sha }}'
+        commit_message: '🚀 Deploy automático'
         exclude_assets: '**.md,**.pdf'

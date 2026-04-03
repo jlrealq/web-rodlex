@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rodlex & Asociados | Abogados & Consultores</title>
-  <meta name="description" content="Bufete de abogados especializado en derecho tributario, corporativo, asesoría contable y estructuración de proyectos. Rodlex & Asociados." />
-  <meta property="og:title" content="Rodlex & Asociados | Abogados & Consultores" />
+  <title>RodLex & Asociados | Abogados & Consultores</title>
+  <meta name="description" content="Bufete de abogados especializado en derecho tributario, corporativo, asesoría contable y estructuración de proyectos. RodLex & Asociados." />
+  <meta property="og:title" content="RodLex & Asociados | Abogados & Consultores" />
   <meta property="og:description" content="Derecho tributario, corporativo y asesoría integral para empresas y emprendedores en Chile." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://rodlex.cl" />
@@ -55,8 +55,14 @@
     .nav-logo {
       display: flex; align-items: center; gap: 0.8rem;
     }
-    .nav-logo img { height: 48px; width: auto; }
-    .nav-brand { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 700; }
+    .nav-logo img { 
+      height: 100px; 
+      width: auto; 
+      object-fit: contain; 
+      /* Perfect transparency trick: black becomes transparent over dark backgrounds */
+      mix-blend-mode: screen;
+    }
+    .nav-brand { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 700; display: none; }
     .nav-brand span { color: var(--gold); }
     .nav-links { display: flex; gap: 2.5rem; list-style: none; }
     .nav-links a {
@@ -375,7 +381,7 @@
   <!-- NAV -->
   <nav id="navbar">
     <div class="nav-logo">
-      <div style="width:44px;height:44px;background:linear-gradient(135deg,#0A1628,#1E2F50);border:1px solid rgba(201,168,76,0.4);border-radius:8px;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:900;color:#C9A84C;">R</div>
+      <img src="assets/brand/rodlex_logo.png" alt="RodLex & Asociados Logo" />
       <div class="nav-brand">RODLEX <span>&</span> ASOCIADOS</div>
     </div>
     <ul class="nav-links">
@@ -399,7 +405,7 @@
           Cuidamos tu futuro <em>legal.</em>
         </h1>
         <p class="hero-sub">
-          Somos Rodlex & Asociados, bufete especializado en derecho tributario, corporativo y asesoría contable. Transformamos la complejidad normativa en una ventaja estratégica para su empresa.
+          Somos RodLex & Asociados, bufete especializado en derecho tributario, corporativo y asesoría contable. Transformamos la complejidad normativa en una ventaja estratégica para su empresa.
         </p>
         <div class="hero-btns">
           <a href="#servicios" class="btn-primary">Conocer Servicios</a>
@@ -457,7 +463,7 @@
         <div class="about-text">
           <span class="section-tag">— Quiénes Somos</span>
           <h2 class="section-title">Un bufete comprometido con la <em style="color:var(--gold);font-style:normal;">excelencia jurídica</em></h2>
-          <p>En Rodlex & Asociados no limitamos nuestro rol al asesoramiento puntual; nos convertimos en el aliado estratégico permanente de su empresa. Combinamos el rigor jurídico con visión empresarial para ofrecer soluciones que protegen, optimizan y proyectan su patrimonio.</p>
+          <p>En RodLex & Asociados no limitamos nuestro rol al asesoramiento puntual; nos convertimos en el aliado estratégico permanente de su empresa. Combinamos el rigor jurídico con visión empresarial para ofrecer soluciones que protegen, optimizan y proyectan su patrimonio.</p>
           <p>Nuestra especialidad en derecho tributario y corporativo, junto a nuestra capacidad de asesoría contable y estructuración de proyectos, nos permite ofrecer una cobertura integral única en el mercado chileno.</p>
           <div class="about-values">
             <div class="value-item">
@@ -486,7 +492,7 @@
         <div class="about-image-wrap">
           <div class="about-image-placeholder">
             <div class="icon-big">⚖️</div>
-            <p>Rodlex & Asociados</p>
+            <p>RodLex & Asociados</p>
             <p style="font-size:0.78rem;opacity:0.5">rodlex.cl</p>
           </div>
         </div>
@@ -593,7 +599,7 @@
       <div class="testimonios-grid">
         <div class="testimonial-card">
           <div class="testimonial-stars">★★★★★</div>
-          <div class="testimonial-text">"Rodlex & Asociados transformó por completo nuestra relación con el SII. Su asesoría tributaria nos permitió optimizar la carga fiscal sin exponer a la empresa a contingencias."</div>
+          <div class="testimonial-text">"RodLex & Asociados transformó por completo nuestra relación con el SII. Su asesoría tributaria nos permitió optimizar la carga fiscal sin exponer a la empresa a contingencias."</div>
           <div class="testimonial-author">Gerente General</div>
           <div class="testimonial-role">Empresa de Tecnología · Santiago</div>
         </div>
@@ -605,7 +611,7 @@
         </div>
         <div class="testimonial-card">
           <div class="testimonial-stars">★★★★★</div>
-          <div class="testimonial-text">"Encontramos en Rodlex no solo asesores legales, sino socios estratégicos. Su visión integral legal-contable es un diferencial que no encontramos en ningún otro estudio."</div>
+          <div class="testimonial-text">"Encontramos en RodLex no solo asesores legales, sino socios estratégicos. Su visión integral legal-contable es un diferencial que no encontramos en ningún otro estudio."</div>
           <div class="testimonial-author">Socia Fundadora</div>
           <div class="testimonial-role">Firma de Inversiones · Chile</div>
         </div>
@@ -648,7 +654,7 @@
 
         <div class="faq-item">
           <button class="faq-question" onclick="toggleFaq(this)">
-            ¿En qué áreas del derecho se especializa Rodlex & Asociados?
+            ¿En qué áreas del derecho se especializa RodLex & Asociados?
             <span class="faq-icon">+</span>
           </button>
           <div class="faq-answer">Nuestras principales áreas son derecho tributario (SII, planificación fiscal), corporativo (sociedades, contratos, M&A), civil, laboral y asesoría contable. Complementamos con estructuración de proyectos e inversión corporativa para ofrecer una solución de ventanilla única.</div>
@@ -672,7 +678,7 @@
 
         <div class="faq-item">
           <button class="faq-question" onclick="toggleFaq(this)">
-            ¿Qué diferencia a Rodlex & Asociados de otros estudios jurídicos?
+            ¿Qué diferencia a RodLex & Asociados de otros estudios jurídicos?
             <span class="faq-icon">+</span>
           </button>
           <div class="faq-answer">Nuestra propuesta de valor es la integración legal-contable-financiera en un solo equipo. No solo resolvemos el problema legal actual, sino que diseñamos estructuras que protegen y proyectan su negocio a largo plazo. Combinamos rigor técnico con visión estratégica empresarial.</div>
@@ -775,7 +781,7 @@
     <div class="footer-inner">
       <div class="footer-top">
         <div class="footer-brand">
-          <div class="nav-brand" style="font-size:1.1rem;">RODLEX <span style="color:var(--gold)">&</span> ASOCIADOS</div>
+          <img src="assets/brand/rodlex_logo.png" alt="RodLex & Asociados Logo" style="height: 120px; width: auto; margin-bottom: 0.5rem; mix-blend-mode: screen;" />
           <p>Bufete de abogados especializado en derecho tributario, corporativo y asesoría consultiva integral para empresas y emprendedores en Chile.</p>
         </div>
         <div class="footer-col">

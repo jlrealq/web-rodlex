@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Estructuración y evaluación de proyectos | Rodlex & Asociados</title>
-  <meta name="description" content="Estructuración jurídica, fiscal y financiera de proyectos de inversión en Chile. Asesoría legal y contable para empresas que buscan minimizar riesgos y maximizar rentabilidad.">
+  <title>RodLex & Asociados | Abogados & Consultores</title>
+  <meta name="description" content="Bufete de abogados especializado en derecho tributario, corporativo, asesoría contable y estructuración de proyectos. RodLex & Asociados." />
   <meta property="og:title" content="RodLex & Asociados | Abogados & Consultores" />
   <meta property="og:description" content="Derecho tributario, corporativo y asesoría integral para empresas y emprendedores en Chile." />
   <meta property="og:type" content="website" />
@@ -115,6 +115,10 @@
       margin-bottom: 1.5rem;
     }
     .hero h1 em { color: var(--gold); font-style: normal; }
+    .hero-sub {
+      font-size: 1.05rem; color: #A8BBCC; max-width: 520px;
+      margin-bottom: 2.5rem; line-height: 1.75;
+    }
     .hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
     .btn-primary {
       padding: 0.9rem 2rem;
@@ -132,26 +136,6 @@
       font-size: 0.9rem; cursor: pointer; transition: all var(--transition);
     }
     .btn-outline:hover { border-color: var(--gold); color: var(--gold); }
-    .btn-secondary {
-      padding: 0.9rem 2rem;
-      background: transparent; color: var(--gold);
-      border: 1px solid var(--gold);
-      border-radius: var(--radius); font-weight: 700;
-      font-size: 0.9rem; letter-spacing: 0.04em; text-transform: uppercase;
-      transition: all var(--transition); cursor: pointer;
-    }
-    .btn-secondary:hover { background: var(--gold); color: var(--navy); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(201,168,76,0.3); }
-
-    .hero-description {
-      display: flex; flex-direction: column; gap: 1rem;
-      margin-bottom: 2.5rem;
-    }
-    .hero-description p {
-      font-size: 1.05rem; color: #A8BBCC; max-width: 580px;
-      line-height: 1.75;
-    }
-    .hero-description strong { color: var(--white); font-weight: 600; }
-
     .hero-visual {
       display: flex; flex-direction: column; gap: 1rem;
     }
@@ -363,127 +347,6 @@
     }
     .wa-btn:hover { transform: scale(1.1); box-shadow: 0 6px 30px rgba(37,211,102,0.6); }
 
-    .wa-btn:hover { transform: scale(1.1); box-shadow: 0 6px 30px rgba(37,211,102,0.6); }
-
-    /* =================== SERVICIO INTEGRAL =================== */
-    .service-integral { background: var(--navy-mid); padding: 6rem 4rem; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
-    .service-integral h2 { margin-bottom: 1.5rem; }
-    .service-integral p { color: #A8BBCC; max-width: 800px; line-height: 1.8; margin-bottom: 2.5rem; }
-    .service-integral .flow-table { margin-bottom: 2.5rem; overflow-x: auto; background: var(--navy); border-radius: 12px; border: 1px solid var(--border); }
-    .service-integral table { width: 100%; border-collapse: collapse; min-width: 850px; }
-    .service-integral th { background: rgba(18,32,64,0.5); padding: 1.5rem 1rem; color: var(--gold); text-align: left; font-family: 'Playfair Display', serif; font-size: 1.1rem; border-bottom: 2px solid var(--border); }
-    .service-integral td { padding: 1.5rem 1rem; color: #A8BBCC; font-size: 0.92rem; border-bottom: 1px solid var(--border); vertical-align: top; line-height: 1.6; }
-    .service-integral tr:last-child td { border-bottom: none; }
-    .service-integral tr:hover { background: rgba(201,168,76,0.03); }
-    .service-integral .benefit-tag { color: var(--gold); font-weight: 600; }
-
-    /* =================== PROJECT STRUCTURING =================== */
-    .project-structuring { background: var(--navy); padding: 6rem 4rem; border-bottom: 1px solid var(--border); }
-    .project-structuring h2 { margin-bottom: 1.5rem; }
-    .project-structuring p { color: #A8BBCC; max-width: 850px; line-height: 1.8; margin-bottom: 2rem; }
-    .project-structuring .project-checklist {
-      background: var(--navy-mid); padding: 3rem; border-radius: 16px;
-      border: 1px solid var(--border); margin: 3rem 0;
-      box-shadow: 0 10px 40px rgba(0,0,0,0.3);
-    }
-    .project-structuring .project-checklist h3 {
-      font-family: 'Playfair Display', serif; color: var(--gold);
-      margin-bottom: 2rem; font-size: 1.4rem; text-align: center;
-    }
-    .project-structuring .project-checklist ul {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 1.5rem; list-style: none; padding: 0;
-    }
-    .project-structuring .project-checklist li {
-      position: relative; padding-left: 2.2rem; color: #A8BBCC;
-      font-size: 0.95rem; line-height: 1.6;
-    }
-    .project-structuring .project-checklist li::before {
-      content: "✓"; position: absolute; left: 0; top: 0;
-      color: var(--gold); font-weight: 900; font-size: 1.2rem;
-    }
-    .project-structuring .cta-project { margin-top: 3.5rem; text-align: center; }
-
-    /* =================== FAQ =================== */
-    .faq-item { border-bottom: 1px solid var(--border); padding: 2.5rem 0; transition: all 0.3s ease; }
-    .faq-item:last-child { border-bottom: none; }
-    .faq-item h3 { color: var(--gold); margin-bottom: 1rem; font-family: 'Playfair Display', serif; font-size: 1.3rem; }
-    .faq-item p { color: #A8BBCC; line-height: 1.8; font-size: 1rem; max-width: 900px; }
-    .faq-item strong { color: #FFF; font-weight: 600; }
-    .faq-item:hover { padding-left: 1rem; background: rgba(201,168,76,0.02); }
-
-    .faq-item:hover { padding-left: 1rem; background: rgba(201,168,76,0.02); }
-
-    /* =================== CONVERSION CTA =================== */
-    .conversion-cta { background: var(--navy); padding: 6rem 2rem; text-align: center; border-bottom: 1px solid var(--border); }
-    .conversion-cta h3 { font-family: 'Playfair Display', serif; font-size: 2.2rem; color: #FFF; margin-bottom: 1.5rem; }
-    .conversion-cta p { color: #A8BBCC; max-width: 800px; margin: 0 auto 3rem; font-size: 1.1rem; line-height: 1.8; }
-    .conversion-cta strong { color: var(--gold); font-weight: 600; }
-    .cta-buttons { display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; }
-    .btn-whatsapp { 
-      background: #25D366; color: #FFF; padding: 1rem 2.2rem; border-radius: 4px;
-      font-weight: 600; text-decoration: none; transition: all 0.3s ease;
-      display: inline-flex; align-items: center; gap: 0.5rem; border: none;
-    }
-    .btn-whatsapp:hover { background: #128C7E; transform: translateY(-3px); box-shadow: 0 10px 20px rgba(37,211,102,0.2); color: #FFF; }
-
-    .btn-whatsapp:hover { background: #128C7E; transform: translateY(-3px); box-shadow: 0 10px 20px rgba(37,211,102,0.2); color: #FFF; }
-
-    /* =================== RESOURCES =================== */
-    .resources-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3.5rem; }
-    .resource-item { 
-      background: rgba(255,255,255,0.02); border: 1px solid var(--border); padding: 3rem 2.5rem; 
-      transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); border-radius: 4px; 
-      display: flex; flex-direction: column; height: 100%;
-    }
-    .resource-item:hover { border-color: var(--gold); transform: translateY(-10px); background: rgba(201,168,76,0.04); box-shadow: 0 20px 40px rgba(0,0,0,0.3); }
-    .resource-item h3 { font-family: 'Playfair Display', serif; color: var(--gold); margin-bottom: 1.2rem; font-size: 1.3rem; line-height: 1.4; }
-    .resource-item p { color: #A8BBCC; line-height: 1.7; font-size: 1rem; margin-bottom: 2rem; flex-grow: 1; }
-    .download-link { 
-      color: #FFF; font-weight: 600; text-transform: uppercase; letter-spacing: 1.5px; font-size: 0.75rem; 
-      border-bottom: 1px solid var(--gold); padding-bottom: 4px; text-decoration: none; align-self: flex-start;
-      transition: all 0.3s ease;
-    }
-    .download-link:hover { color: var(--gold); border-bottom-color: #FFF; }
-
-    .download-link:hover { color: var(--gold); border-bottom-color: #FFF; }
-
-    /* =================== CREDIBILITY =================== */
-    .credibility-stats { display: flex; gap: 5rem; justify-content: center; margin: 4rem 0; flex-wrap: wrap; text-align: center; }
-    .stat-box { flex: 1; min-width: 200px; }
-    .stat-box h4 { font-family: 'Playfair Display', serif; font-size: 3.5rem; color: var(--gold); margin-bottom: 0.5rem; line-height: 1; }
-    .stat-box p { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; color: #FFF; font-weight: 600; }
-    .credibility-text { color: #A8BBCC; max-width: 800px; margin: 0 auto; line-height: 1.8; font-size: 1.1rem; text-align: center; }
-    .credibility-text strong { color: #FFF; font-weight: 600; }
-
-    .download-link:hover { color: var(--gold); border-bottom-color: #FFF; }
-
-    /* =================== CREDIBILITY =================== */
-    .credibility { background: var(--navy-mid); padding: 6rem 2rem; text-align: center; border-bottom: 1px solid var(--border); }
-    .credibility h2 { font-family: 'Playfair Display', serif; font-size: 2.5rem; color: #FFF; margin-bottom: 1rem; }
-    .credibility-stats { display: flex; gap: 5rem; justify-content: center; margin: 4rem 0; flex-wrap: wrap; }
-    .stat-box { flex: 1; min-width: 200px; }
-    .stat-box h4 { font-family: 'Playfair Display', serif; font-size: 4rem; color: var(--gold); margin-bottom: 0.5rem; line-height: 1; }
-    .stat-box p { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; color: #FFF; font-weight: 600; }
-    .credibility-text { color: #A8BBCC; max-width: 850px; margin: 0 auto; line-height: 1.8; font-size: 1.1rem; }
-    .credibility-text p { margin-bottom: 1.5rem; }
-    .credibility-text strong { color: #FFF; font-weight: 600; }
-
-    .credibility-text strong { color: #FFF; font-weight: 600; }
-
-    /* =================== SEO SECTION =================== */
-    .project-structuring-seo { background: #08101C; padding: 10rem 2rem; border-top: 1px solid var(--border); }
-    .project-structuring-seo .section-inner { max-width: 900px; }
-    .project-structuring-seo h1, .project-structuring-seo h2 { font-family: 'Playfair Display', serif; color: var(--gold); margin: 3.5rem 0 1.5rem; font-size: 2.2rem; }
-    .project-structuring-seo h1 { font-size: 2.8rem; border-bottom: 1px solid var(--gold-dim); padding-bottom: 1rem; }
-    .project-structuring-seo h3 { color: #FFF; margin: 2rem 0 1rem; font-family: 'Playfair Display', serif; font-size: 1.4rem; }
-    .project-structuring-seo p { color: #A8BBCC; line-height: 1.9; margin-bottom: 1.8rem; font-size: 1.1rem; }
-    .project-structuring-seo strong { color: #FFF; }
-    .project-structuring-seo ul, .project-structuring-seo ol { margin-left: 2rem; margin-bottom: 2.5rem; color: #FFF; line-height: 1.8; }
-    .project-structuring-seo li { margin-bottom: 1rem; }
-    .cta-project-seo { display: flex; gap: 2rem; margin-top: 4rem; justify-content: center; }
-    .cta-project-seo .btn-primary, .cta-project-seo .btn-whatsapp { flex: 1; text-align: center; max-width: 400px; }
-
     /* =================== RESPONSIVE =================== */
     @media (max-width: 1024px) {
       nav { padding: 1.2rem 2rem; }
@@ -537,21 +400,16 @@
     <div class="hero-grid">
       <div class="hero-content">
         <div class="hero-tag">⚖️ Bufete Premium · Desde 2010</div>
-        <h1>Asesoría jurídica y contable <br><em>orientada a resultados</em></h1>
-        <div class="hero-description">
-          <p>
-            En Rodlex contamos con más de 15 años de experiencia acompañando a <strong>empresas y emprendedores</strong> en Chile y en el extranjero,
-            con un enfoque integral entre <strong>asesoría legal tributaria</strong>, <strong>corporativa</strong>, <strong>laboral</strong>,
-            y <strong>servicios contables y de evaluación de proyectos</strong>.
-          </p>
-          <p>
-            Trabajamos como tu <strong>ventanilla única</strong> para que no tengas que coordinar abogados, contadores y evaluadores de proyectos por separado.
-            Enfocamos nuestro trabajo en minimizar riesgos, optimizar la carga tributaria y apoyar el crecimiento sostenible de tu negocio.
-          </p>
-        </div>
+        <h1>
+          Protegemos lo que <em>construiste.</em><br />
+          Cuidamos tu futuro <em>legal.</em>
+        </h1>
+        <p class="hero-sub">
+          Somos RodLex & Asociados, bufete especializado en derecho tributario, corporativo y asesoría contable. Transformamos la complejidad normativa en una ventaja estratégica para su empresa.
+        </p>
         <div class="hero-btns">
-          <a href="#servicios" class="btn-primary">Conoce nuestros servicios</a>
-          <a href="#contacto" class="btn-secondary">Agenda tu primera consulta gratuita</a>
+          <a href="#servicios" class="btn-primary">Conocer Servicios</a>
+          <a href="#contacto" class="btn-outline">Agendar Consulta</a>
         </div>
       </div>
       <div class="hero-visual">
@@ -642,84 +500,7 @@
     </div>
   </section>
 
-  </section>
-
-  <!-- CREDIBILIDAD -->
-  <section class="credibility">
-    <div class="section-inner">
-      <span class="section-tag">— Confianza & Trayectoria</span>
-      <h2>Credibilidad y trayectoria</h2>
-      
-      <div class="credibility-stats">
-        <div class="stat-box">
-          <h4>15+</h4>
-          <p>Años de Experiencia</p>
-        </div>
-        <div class="stat-box">
-          <h4>300+</h4>
-          <p>Clientes Acompañados</p>
-        </div>
-        <div class="stat-box">
-          <h4>98%</h4>
-          <p>Tasa de Éxito</p>
-        </div>
-      </div>
-
-      <div class="credibility-text">
-        <p>
-          Contamos con más de <strong>15 años de experiencia</strong> en asesoría jurídica y contable,
-          hemos acompañado a más de <strong>300 clientes</strong> y resuelto más del <strong>98% de nuestros encargos</strong> con éxito.
-        </p>
-        <p>
-          Trabajamos con empresas de distintos rubros, desde pymes nacientes hasta grupos empresariales con operaciones internacionales.
-          Si solicitas, podemos compartir ejemplos de casos (sin identificar clientes) que ilustren nuestro enfoque.
-        </p>
-      </div>
-    </div>
-  </section>
-  <section class="service-integral">
-    <div class="section-inner">
-      <span class="section-tag">— Valor Diferencial</span>
-      <h2 class="section-title">Un equipo, un flujo: tu empresa en <em style="color:var(--gold);font-style:normal;">un solo lugar</em></h2>
-      <p>
-        En Rodlex acompañamos a tus empresas desde el inicio hasta la etapa de expansión o reestructuración,
-        integrando <strong>abogacía</strong>, <strong>contabilidad</strong> y <strong>evaluación de proyectos</strong> en un solo contacto.
-      </p>
-
-      <div class="flow-table">
-        <table>
-          <thead>
-            <tr>
-              <th>Etapa del negocio</th>
-              <th>Qué hacemos (legal)</th>
-              <th>Qué hacemos (contable / financiero)</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td style="color:var(--gold); font-weight:700; font-family:'Playfair Display', serif; font-size:1.1rem;">Inicio</td>
-              <td>Creación de sociedad, estatutos, régimen tributario, contratos de provisión.</td>
-              <td>Contabilidad básica, registro correcto de ingresos y gastos, KPI financieros iniciales.</td>
-            </tr>
-            <tr>
-              <td style="color:var(--gold); font-weight:700; font-family:'Playfair Display', serif; font-size:1.1rem;">Crecimiento</td>
-              <td>Fusiones, adquisiciones, contratos comerciales, joint ventures, reorganización de holdings.</td>
-              <td>Auditoría contable, modelamiento financiero, apoyo en gestión de tesorería y financiamiento.</td>
-            </tr>
-            <tr>
-              <td style="color:var(--gold); font-weight:700; font-family:'Playfair Display', serif; font-size:1.1rem;">Crisis o regularización</td>
-              <td>Defensa ante el SII, negociación fiscal, procesos laborales, protección de activos.</td>
-              <td>Auditoría forense, reestructuración de deudas, análisis de viabilidad y planes de pago.</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <p>
-        <strong class="benefit-tag">Beneficio clave:</strong> coordinación clara, menos reuniones, menos errores y una estrategia alineada entre tu contabilidad, tu estructura jurídica y tu visión de negocio.
-      </p>
-    </div>
-  </section>
+  <!-- SERVICIOS -->
   <section class="section" id="servicios">
     <div class="section-inner">
       <span class="section-tag">— Áreas de Práctica</span>
@@ -809,39 +590,6 @@
     </div>
   </section>
 
-  <!-- ESTRUCTURACIÓN DE PROYECTOS -->
-  <section class="project-structuring">
-    <div class="section-inner">
-      <span class="section-tag">— Consultoría Estratégica</span>
-      <h2 class="section-title">Estructuración y evaluación <br><em style="color:var(--gold);font-style:normal;">de proyectos</em></h2>
-      <p>
-        Antes de invertir tiempo y dinero en un proyecto, es clave evaluar su <strong>viabilidad jurídica, fiscal y financiera</strong>.
-        En Rodlex revisamos el mercado, los riesgos legales, la estructura impositiva y la capacidad de financiamiento para que tomes decisiones con fundamentos.
-      </p>
-
-      <div class="project-checklist">
-        <h3>Lo que evaluamos al entrar en un proyecto</h3>
-        <ul>
-          <li>Estudio de mercado y segmento objetivo.</li>
-          <li>Estructura societaria óptima (holding, sucursal, filial, fideicomiso, etc.).</li>
-          <li>Régimen tributario y oportunidades de incentivos (Pro‑Pyme, fondos públicos, etc.).</li>
-          <li>Modelamiento financiero (proyecciones de ingresos, costos, flujo de caja y retorno).</li>
-          <li>Formas de financiamiento: capital propio, deuda, socios minoritarios, fondos públicos o privados.</li>
-          <li>Aspectos laborales, de propiedad intelectual y de cumplimiento normativo.</li>
-        </ul>
-      </div>
-
-      <p>
-        Trabajamos con proyectos de expansión de retail, fusión de pymes, iniciativas de inversión extranjera en Chile,
-        y proyectos apoyados por fondos públicos (por ejemplo, vía fondos de desarrollo local o programas de innovación).
-      </p>
-
-      <div class="cta-project">
-        <a href="#contacto" class="btn-primary">Evalúa la viabilidad de tu proyecto con nosotros</a>
-      </div>
-    </div>
-  </section>
-
   <!-- TESTIMONIOS -->
   <section class="section" id="testimonios">
     <div class="section-inner">
@@ -885,7 +633,7 @@
         </div>
         <div class="noticia-card">
           <span class="noticia-tag">Corporativo</span>
-              <h4>Modificaciones a la Ley de Sociedades: impacto en el gobierno corporativo</h4>
+          <h4>Modificaciones a la Ley de Sociedades: impacto en el gobierno corporativo</h4>
           <p>Las recientes reformas al Código de Comercio incorporan nuevas exigencias de transparencia para sociedades anónimas cerradas y SpA.</p>
         </div>
         <div class="noticia-card">
@@ -897,103 +645,53 @@
     </div>
   </section>
 
-  <!-- RECURSOS -->
-  <section class="section" id="recursos" style="background: var(--navy);">
-    <div class="section-inner">
-      <span class="section-tag">— Valor Añadido</span>
-      <h2 class="section-title">Recursos útiles para tu negocio</h2>
-      <p class="section-sub">Te entregamos guías rápidas y descargables para ayudarte a mantener tu empresa al día con SII y normativas laborales.</p>
-
-      <div class="resources-grid">
-        <div class="resource-item">
-          <div>
-            <h3>“Regularización ante el SII en 5 pasos”</h3>
-            <p>Checklist para revisar tu situación tributaria y evitar multas innecesarias.</p>
-          </div>
-          <a href="#contacto" class="download-link">Descárgalo (registro de email)</a>
-        </div>
-
-        <div class="resource-item">
-          <div>
-            <h3>“Pre‑chequeo laboral básico”</h3>
-            <p>Lista de control para verificar principales obligaciones laborales y minimizar riesgos.</p>
-          </div>
-          <a href="#contacto" class="download-link">Descárgalo (registro de email)</a>
-        </div>
-
-        <div class="resource-item">
-          <div>
-            <h3>“Guía rápida para proyectos con fondos públicos”</h3>
-            <p>Puntos clave jurídicos y financieros a considerar si postulas a fondos de desarrollo o innovación.</p>
-          </div>
-          <a href="#contacto" class="download-link">Descárgalo (registro de email)</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- FAQ -->
-  <section class="section" id="faq" style="background: var(--navy-mid);">
+  <section class="section" id="faq">
     <div class="section-inner">
-      <span class="section-tag">— Resolviendo Dudas</span>
-      <h2 class="section-title">Preguntas Frecuentes</h2>
+      <span class="section-tag">— Preguntas Frecuentes</span>
+      <h2 class="section-title" style="text-align:center;margin-bottom:3rem;">Resolución de Dudas</h2>
+      <div class="faq-wrap">
 
-      <div class="faq-list">
         <div class="faq-item">
-          <h3>¿Cuánto tardan en resolver un caso típico?</h3>
-          <p>
-            Depende de la complejidad, pero en general:
-            <strong>asuntos tributarios simples</strong> se resuelven en 1–2 reuniones;
-            <strong>procesos laborales o fiscalizaciones</strong> pueden variar entre 3–6 meses, siempre con seguimiento continuo.
-          </p>
+          <button class="faq-question" onclick="toggleFaq(this)">
+            ¿En qué áreas del derecho se especializa RodLex & Asociados?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">Nuestras principales áreas son derecho tributario (SII, planificación fiscal), corporativo (sociedades, contratos, M&A), civil, laboral y asesoría contable. Complementamos con estructuración de proyectos e inversión corporativa para ofrecer una solución de ventanilla única.</div>
         </div>
 
         <div class="faq-item">
-          <h3>¿Qué documentos necesito para la primera reunión?</h3>
-          <p>
-            Te pediremos: estado de situación financiera reciente, última declaración de impuestos, contratos relevantes (arriendo, societario, laboral),
-            y una breve descripción de tus objetivos para los próximos 1–3 años.
-          </p>
+          <button class="faq-question" onclick="toggleFaq(this)">
+            ¿Cómo funciona la primera consulta?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">La primera consulta es gratuita y tiene una duración de 30 minutos. En ella evaluamos su situación, identificamos el alcance del requerimiento y le presentamos la mejor estrategia legal o contable para su caso. Puede agendarla directamente desde este sitio o por WhatsApp.</div>
         </div>
 
         <div class="faq-item">
-          <h3>¿Cómo trabajan con mi contador actual?</h3>
-          <p>
-            No siempre es necesario reemplazar a tu contador. Podemos <strong>complementar</strong> su trabajo:
-            nosotros gestionamos la parte legal y tributaria compleja, y el equipo contable se enfoca en registros diarios y contabilidad básica.
-          </p>
+          <button class="faq-question" onclick="toggleFaq(this)">
+            ¿Atienden a empresas de todos los tamaños?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">Sí. Trabajamos con emprendedores, pequeñas y medianas empresas, así como con grupos corporativos. Adaptamos nuestros servicios y honorarios según la complejidad y el tamaño de la organización. lo importante es la calidad de la asesoría sin importar el tamaño del cliente.</div>
         </div>
 
         <div class="faq-item">
-          <h3>¿Qué pasa si tengo un problema laboral urgente o una fiscalización en curso?</h3>
-          <p>
-            En Rodlex damos prioridad a situaciones de <strong>emergencia laboral o fiscal</strong>.
-            Programamos una reunión rápida (presencial o remota) para analizar el caso, definir estrategia y coordinar con tu contador.
-          </p>
+          <button class="faq-question" onclick="toggleFaq(this)">
+            ¿Qué diferencia a RodLex & Asociados de otros estudios jurídicos?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">Nuestra propuesta de valor es la integración legal-contable-financiera en un solo equipo. No solo resolvemos el problema legal actual, sino que diseñamos estructuras que protegen y proyectan su negocio a largo plazo. Combinamos rigor técnico con visión estratégica empresarial.</div>
         </div>
 
         <div class="faq-item">
-          <h3>¿Trabajan con empresas de determinados rubros?</h3>
-          <p>
-            Acompañamos principalmente a empresas de <strong>retail, servicios, logística, tecnología e inversiones</strong>.
-            Si tienes un proyecto en otro rubro, igual podemos evaluar tu caso.
-          </p>
+          <button class="faq-question" onclick="toggleFaq(this)">
+            ¿Cómo se estructuran los honorarios?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">Según el tipo de servicio, los honorarios pueden ser por hora, por proyecto cerrado o mediante retainer mensual para empresas con necesidades recurrentes. En la primera consulta presentamos una propuesta transparente y sin letra chica.</div>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- CONVERSION CTA -->
-  <section class="conversion-cta">
-    <div class="section-inner">
-      <h3>¿Listo para mejorar tu situación jurídica, fiscal y contable?</h3>
-      <p>
-        Agenda una <strong>primera consulta gratuita de 30 minutos</strong> sin compromiso.
-        Revisaremos tu situación actual, te mostraremos los riesgos clave y te propondremos una estrategia clara.
-      </p>
-      <div class="cta-buttons">
-        <a href="https://wa.me/569XXXXXXXX" class="btn-whatsapp">Chatea por WhatsApp</a>
-        <a href="#contacto" class="btn-primary" style="padding: 1rem 2.2rem;">Llena el formulario de contacto</a>
       </div>
     </div>
   </section>
@@ -1038,183 +736,47 @@
             </div>
           </div>
         </div>
-        <form class="contact-form" action="https://formspree.io/f/xeeprprg" method="POST">
+        <form class="contact-form" onsubmit="handleForm(event)">
           <div class="form-row">
             <div class="form-group">
-              <label for="name">Nombre</label>
-              <input type="text" id="name" name="name" placeholder="Su nombre" required />
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" placeholder="Su nombre" required />
             </div>
             <div class="form-group">
-              <label for="email">Correo electrónico</label>
-              <input type="email" id="email" name="email" placeholder="correo@empresa.cl" required />
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="correo@empresa.cl" required />
             </div>
           </div>
           <div class="form-row">
             <div class="form-group">
-              <label for="phone">Teléfono (opcional)</label>
-              <input type="tel" id="phone" name="phone" placeholder="+56 9..." />
+              <label for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" placeholder="+56 9..." />
             </div>
             <div class="form-group">
               <label for="area">Área de Consulta</label>
-              <select name="area" id="area">
-                <option value="legal">Asesoría Legal</option>
-                <option value="tributaria">Asesoría Tributaria</option>
-                <option value="contable">Asesoría Contable</option>
-                <option value="proyectos">Evaluación de Proyectos</option>
-                <option value="otros">Otros</option>
+              <select id="area">
+                <option value="">Seleccione un área</option>
+                <option>Derecho Tributario</option>
+                <option>Derecho Corporativo</option>
+                <option>Derecho Civil & Contratos</option>
+                <option>Asesoría Contable & Auditoría</option>
+                <option>Derecho Laboral</option>
+                <option>Estructuración de Proyectos</option>
+                <option>Otro</option>
               </select>
             </div>
           </div>
           <div class="form-group">
-            <label for="message">Mensaje</label>
-            <textarea id="message" name="message" rows="5" placeholder="Cuéntenos brevemente su caso..." required></textarea>
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" placeholder="Describa brevemente su consulta..."></textarea>
           </div>
-          <button type="submit" class="btn-primary" style="width:100%;">Enviar consulta</button>
+          <button type="submit" class="btn-primary" style="margin-top:0.5rem">Enviar Consulta</button>
         </form>
       </div>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <!-- SEO KNOWLEDGE HUB -->
-  <section class="project-structuring-seo">
-    <div class="section-inner">
-      <h1>Estructuración y evaluación de proyectos de inversión</h1>
-
-      <p>
-        En Rodlex & Asociados ofrecemos <strong>estructuración y evaluación integral de proyectos</strong> para empresas en Chile y en el extranjero.
-        Trabajamos desde la idea hasta la implementación, integrando <strong>asuntos legales, tributarios, contables y financieros</strong>
-        para que tu proyecto sea viable, sostenible y rentable.
-      </p>
-
-      <h2>¿Qué es la estructuración de proyectos?</h2>
-
-      <p>
-        La <strong>estructuración de proyectos</strong> consiste en diseñar la forma jurídica, fiscal y financiera
-        en la que se desarrollará tu inversión. No basta con tener una buena idea:
-        hay que decidir cómo se organiza la sociedad, cómo se financia, cómo se reparten las ganancias y cómo se protegen los activos.
-      </p>
-
-      <p>
-        En este proceso, consideramos:
-        <strong>riesgos jurídicos</strong> (contratos, responsabilidades, cumplimiento normativo),
-        <strong>riesgos fiscales</strong> (regímenes tributarios, incentivos, fuentes y costos de financiamiento),
-        y <strong>riesgos financieros</strong> (liquidez, plazos, capacidad de pago).
-      </p>
-
-      <h2>¿Cuándo conviene estructurar y evaluar un proyecto?</h2>
-
-      <p>
-        Debes considerar una <strong>estructuración y evaluación de proyectos</strong> cuando:
-      </p>
-
-      <ul>
-        <li>Planeas una nueva inversión (negocio propio, expansión de retail, sucursal en otro país).</li>
-        <li>Quieres fusionar pymes o reorganizar tus holdings para optimizar la carga tributaria.</li>
-        <li>Piensas postular a fondos públicos (por ejemplo, fondos de desarrollo local, innovación o proyectos de inversión).</li>
-        <li>Tienes dudas sobre la viabilidad financiera futura de tu empresa o proyecto.</li>
-      </ul>
-
-      <h2>Nuestro enfoque en estructuración y evaluación de proyectos</h2>
-
-      <p>
-        En Rodlex integramos <strong>abogacía, contabilidad y evaluación de proyectos</strong> en un solo equipo.
-        Esto permite que la estructura jurídica, la fiscalidad y el modelo financiero estén alineados desde el inicio.
-      </p>
-
-      <h3>Aspectos jurídicos que revisamos</h3>
-      <ul>
-        <li>Elección del tipo de sociedad y estructura de holdings o filiales.</li>
-        <li>Redacción y revisión de contratos clave (societarios, de arrendamiento, de servicios, de financiamiento).</li>
-        <li>Protección de activos y mecanismos para limitar responsabilidades personales.</li>
-        <li>Compliance con normativa laboral, tributaria y sectorial.</li>
-      </ul>
-
-      <h3>Aspectos fiscales y contables</h3>
-      <ul>
-        <li>Regimen tributario óptimo según la actividad y el tamaño del proyecto.</li>
-        <li>Créditos y beneficios fiscales disponibles (por ejemplo, Pro‑Pyme, incentivos a la inversión, etc.).</li>
-        <li>Contabilidad compatible con el modelo financiero y con las exigencias de fondos públicos o bancos.</li>
-        <li>Revisión de facturación, depreciaciones y bases imponibles para evitar multas.</li>
-      </ul>
-
-      <h3>Aspectos financieros y de rentabilidad</h3>
-      <ul>
-        <li>Modelamiento financiero (ingresos, costos, inversión inicial, flujos de caja).</li>
-        <li>Consideración de distintos escenarios (optimista, realista, pesimista).</li>
-        <li>Estimación de rentabilidad y retorno esperado (TIR, VAN, período de recuperación).</li>
-        <li>Identificación de riesgos financieros y de liquidez.</li>
-      </ul>
-
-      <h2>¿Qué desafíos resolvemos en la estructuración de proyectos?</h2>
-
-      <p>
-        Muchas empresas llegan a nosotros con dudas concretas sobre su proyecto, por ejemplo:
-      </p>
-
-      <ul>
-        <li>“¿Vale la pena emprender este negocio o invertir más en el actual?”</li>
-        <li>“¿Qué estructura societaria me protege mejor pero no encarece la carga tributaria?”</li>
-        <li>“¿Cómo financia mi proyecto sin perder el control de la empresa?”</li>
-        <li>“¿Estoy cumpliendo con la normativa al momento de participar en un proyecto con fondos públicos?”</li>
-      </ul>
-
-      <p>
-        Nuestra respuesta no es solo decir “sí” o “no”, sino entregar un análisis claro de riesgos,
-        ventajas y alternativas, con un <strong>modelo financiero realista</strong> y una estructura jurídica sólida.
-      </p>
-
-      <h2>¿Qué incluye nuestro servicio de estructuración de proyectos?</h2>
-
-      <p>
-        Nuestro servicio típico de <strong>estructuración y evaluación de proyectos</strong> incluye:
-      </p>
-
-      <ol>
-        <li><strong>Reunión inicial:</strong> revisión de tu idea o proyecto actual, objetivos y horizonte temporal.</li>
-        <li><strong>Estudio de mercado y riesgos:</strong> revisión de contexto competitivo y normativo.</li>
-        <li><strong>Propuesta de estructura jurídica:</strong> elección de sociedad, holding, filial, etc.</li>
-        <li><strong>Modelamiento financiero:</strong> proyecciones y análisis de rentabilidad.</li>
-        <li><strong>Plan de implementación:</strong> pasos concretos para constituir, operar y financiar el proyecto.</li>
-        <li><strong>Seguimiento y ajustes:</strong> reevaluación periódica si cambian condiciones del mercado o del proyecto.</li>
-      </ol>
-
-      <h2>¿Cómo lo trabajamos con tu contador actual?</h2>
-
-      <p>
-        No siempre es necesario cambiar de contador. En muchos casos, damos el soporte de <strong>abogacía y estructuración de proyectos</strong>,
-        mientras tu contador se enfoca en registros contables diarios y estados financieros.
-        Coordinamos con ellos para que la parte jurídico‑fiscal y la contable estén alineadas.
-      </p>
-
-      <h2>¿Qué rubros de proyectos solemos acompañar?</h2>
-
-      <p>
-        Hemos trabajado en estructuración y evaluación de proyectos para:
-      </p>
-
-      <ul>
-        <li>Expansión de redes de retail y servicios (tiendas, franquicias, centros comerciales).</li>
-        <li>Proyectos de inversión extranjera en Chile.</li>
-        <li>Fusiones y adquisiciones de pymes.</li>
-        <li>Proyectos que postulan a fondos públicos de desarrollo e innovación.</li>
-        <li>Reestructuración de empresas con problemas de liquidez o de rentabilidad.</li>
-      </ul>
-
-      <h2>Agenda una evaluación de tu proyecto</h2>
-
-      <p>
-        Si tienes un proyecto en mente o quieres revisar uno ya en marcha,
-        puedes <strong>agendar una primera consulta gratuita</strong> para evaluar su viabilidad jurídica, fiscal y financiera.
-      </p>
-
-      <div class="cta-project-seo">
-        <a href="https://wa.me/569XXXXXXXX" class="btn-whatsapp">Consulta por WhatsApp</a>
-        <a href="#contacto" class="btn-primary">Llena el formulario</a>
-      </div>
-    </div>
-  </section>
-
   <footer>
     <div class="footer-inner">
       <div class="footer-top">

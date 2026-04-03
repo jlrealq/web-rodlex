@@ -356,14 +356,45 @@
     .wa-btn {
       position: fixed; bottom: 2rem; right: 2rem; z-index: 999;
       width: 56px; height: 56px; border-radius: 50%;
-      background: #25D366; color: white;
+      background: #23d366; color: white;
       display: flex; align-items: center; justify-content: center;
       font-size: 1.5rem; box-shadow: 0 4px 20px rgba(37,211,102,0.4);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .wa-btn:hover { transform: scale(1.1); box-shadow: 0 6px 30px rgba(37,211,102,0.6); }
 
-    .wa-btn:hover { transform: scale(1.1); box-shadow: 0 6px 30px rgba(37,211,102,0.6); }
+    /* =================== BACK TO TOP =================== */
+    .back-to-top {
+      position: fixed;
+      bottom: 7rem; /* Positioned above the WhatsApp button */
+      right: 2rem;
+      background: var(--gold);
+      color: var(--navy);
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(20px);
+      transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+      z-index: 1000;
+      font-size: 1.2rem;
+    }
+    .back-to-top.visible {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+    .back-to-top:hover {
+      background: #FFF;
+      transform: scale(1.1);
+    }
 
     /* =================== SERVICIO INTEGRAL =================== */
     .service-integral { background: var(--navy-mid); padding: 6rem 4rem; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
@@ -1313,6 +1344,24 @@
       el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
       observer.observe(el);
     });
+
+    // Back to Top Logic
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 400) {
+        backToTop.classList.add('visible');
+      } else {
+        backToTop.classList.remove('visible');
+      }
+    });
+
+    backToTop.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
   </script>
+
+  <!-- Botón Volver Arriba -->
+  <button id="backToTop" class="back-to-top" aria-label="Volver arriba">↑</button>
 </body>
 </html>

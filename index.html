@@ -58,9 +58,8 @@
     .nav-logo img { 
       height: 100px; 
       width: auto; 
+      /* El nuevo logo ya tiene fondo transparente, por lo que no necesita trucos de mezclado */
       object-fit: contain; 
-      /* Perfect transparency trick: black becomes transparent over dark backgrounds */
-      mix-blend-mode: screen;
     }
     .nav-brand { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 700; display: none; }
     .nav-brand span { color: var(--gold); }
@@ -549,7 +548,7 @@
   <!-- NAV -->
   <nav id="navbar">
     <div class="nav-logo">
-      <img src="assets/brand/rodlex_logo.png" alt="RodLex & Asociados Logo" />
+      <img src="assets/brand/Rodlex.png" alt="RodLex & Asociados Logo" />
       <div class="nav-brand">RODLEX <span>&</span> ASOCIADOS</div>
     </div>
     <ul class="nav-links">
@@ -1251,7 +1250,7 @@
     <div class="footer-inner">
       <div class="footer-top">
         <div class="footer-brand">
-          <img src="assets/brand/rodlex_logo.png" alt="RodLex & Asociados Logo" style="height: 120px; width: auto; margin-bottom: 0.5rem; mix-blend-mode: screen;" />
+          <img src="assets/brand/Rodlex.png" alt="RodLex & Asociados Logo" style="height: 120px; width: auto; margin-bottom: 0.5rem;" />
           <p>Bufete de abogados especializado en derecho tributario, corporativo y asesoría consultiva integral para empresas y emprendedores en Chile.</p>
         </div>
         <div class="footer-col">
